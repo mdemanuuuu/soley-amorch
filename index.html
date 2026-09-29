@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5a7c4">
+  <meta name="description" content="Una historia hecha para Soley, con amorch, recuerdos, fotos, cartas y pequeños secretos.">
+  <title>Para Soley — nuestra historia 🩷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader"><div class="loader-orb">🩷</div><p>Preparando nuestro pequeño universo…</p><small>tómate tu tiempo</small></div>
+  <div class="stars" id="stars"></div>
+  <div class="petals" id="petals"></div>
+
+  <audio id="song" preload="auto">
+    <source src="assets/music/prestame-un-beso.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music" id="musicBtn" aria-label="Reproducir nuestra canción">♫ <span>Nuestra canción</span></button>
+
+  <header class="hero" id="inicio">
+    <div class="hero-glow"></div>
+    <div class="hero-content reveal">
+      <p class="kicker">UNA PÁGINA HECHA SOLO PARA TI</p>
+      <div class="hero-heart">🩷</div>
+      <h1>Soley<br><em>Beltran</em></h1>
+      <p class="hero-sub">mi amorch · mi sol · mi persona favorita</p>
+      <p class="hero-copy">Hay cosas que no caben en un mensaje.<br>Así que hice un lugar donde podamos guardar todas.</p>
+      <button class="btn btn-main" id="enterBtn">Abrir nuestra historia <span>→</span></button>
+      <p class="tiny">La experiencia no tiene prisa. Quédate todo lo que quieras. 🩷</p>
+    </div>
+    <div class="scroll-cue">desliza lentamente <span>↓</span></div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <button data-go="inicio">inicio</button><button data-go="comienzo">comienzo</button><button data-go="recuerdos">recuerdos</button><button data-go="cartas">cartas</button><button data-go="juegos">juegos</button><button data-go="futuro">futuro</button><button data-go="extras">extras</button><button data-go="final">final</button><button id="nightBtn" class="nav-night">🌙</button>
+  </nav>
+
+  <div class="journey-progress" aria-hidden="true"><span id="journeyProgress"></span></div>
+
+  <main>
+    <section class="chapter intro" id="comienzo">
+      <div class="section-inner narrow reveal">
+        <p class="kicker">CAPÍTULO 01 · ANTES DE TODO</p>
+        <h2>Si pudiera guardar un sentimiento…</h2>
+        <p class="lead">probablemente se parecería a esto: un montón de momentos pequeños que, cuando los junto, se convierten en algo enorme.</p>
+        <div class="typewriter" id="typewriter"></div>
+        <div class="chapter-sign">— Manuela 🩷</div>
+      </div>
+    </section>
+
+    <section class="counter chapter" id="contador">
+      <div class="section-inner reveal">
+        <p class="kicker">DESDE QUE EMPEZÓ TODO</p>
+        <h2>28 · 08 · 2026</h2>
+        <p class="lead">Y cada segundo desde entonces cuenta.</p>
+        <div class="counter-grid"><div><b id="days">0</b><span>días</span></div><div><b id="hours">00</b><span>horas</span></div><div><b id="minutes">00</b><span>minutos</span></div><div><b id="seconds">00</b><span>segundos</span></div></div>
+        <p class="muted">Nuestra historia sigue avanzando mientras estás aquí. 🩷</p>
+      </div>
+    </section>
+
+    <section class="chapter story-map" id="recuerdos">
+      <div class="section-inner wide">
+        <div class="reveal"><p class="kicker">CAPÍTULO 02 · NUESTRA HISTORIA</p><h2>De repente,<br>éramos nosotras.</h2><p class="lead">No todo ocurrió en un solo día. Fueron apareciendo momentos, personas, lugares, bromas y pequeñas costumbres hasta que nos dimos cuenta de que ya teníamos una historia.</p></div>
+        <div class="memory-timeline">
+          <article class="memory reveal"><span class="memory-num">01</span><div><small>ANTES DE QUE TODO TUVIERA NOMBRE</small><h3>Tobby robó un calzón 🐶</h3><p>Porque toda gran historia necesita un personaje secundario completamente caótico. Tobby, nuestro hijo, consiguió su propio lugar en nuestra mitología.</p><button class="text-btn" data-photo="07">ver a Tobby →</button></div></article>
+          <article class="memory reveal"><span class="memory-num">02</span><div><small>LOS PRIMEROS “CASUALMENTE ESTOY AQUÍ”</small><h3>Empecé a aparecerme en tu trabajo</h3><p>Porque quería verte. Y si para verte tenía que inventarme una excusa, aparecerme “de casualidad” o simplemente caer por ahí… pues se hacía.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">03</span><div><small>UNA VERDAD QUE DESCUBRIMOS</small><h3>Yo no sabía pillar indirectas 😭</h3><p>Según tú, era evidente. Según yo, absolutamente nada era evidente. Hoy forma parte de nuestros chistes internos.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">04</span><div><small>PRIMERA COMIDA JUNTAS</small><h3>Aviator · Equipetrol</h3><p>Una comida que se convirtió en uno de esos primeros lugares que ahora tienen historia.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">05</span><div><small>FAMILIAS</small><h3>Cuando conociste a mi madre</h3><p>Ese momento en que nuestra historia empezó a tocar también las historias que ya existían antes de nosotras.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">06</span><div><small>MINISO</small><h3>Cuando conocí a tu padre</h3><p>Yo estaba trabajando en Miniso y terminó siendo otro de esos capítulos que hoy parecen parte natural de nuestra historia.</p><button class="text-btn" data-photo="12">ver recuerdo →</button></div></article>
+          <article class="memory reveal"><span class="memory-num">07</span><div><small>EN CASA</small><h3>Comiste en mi casa y te dio pena saludar a mi hermano</h3><p>Un pequeño momento que todavía da ternura recordar.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">08</span><div><small>PERSONAS IMPORTANTES</small><h3>Conociste a mi mejor amiga</h3><p>Otro pedacito de mi mundo que pasó a conocerte a ti.</p></div></article>
+          <article class="memory reveal"><span class="memory-num">09</span><div><small>Y SÍ, TAMBIÉN NOS PELEAMOS</small><h3>Las peleas que siempre terminamos solucionando</h3><p>Porque amar no significa que nunca haya momentos difíciles. Significa que seguimos encontrando la forma de volver a elegirnos y hablarlo.</p></div></article>
+          <article class="memory featured reveal"><span class="memory-num">10</span><div><small>28 DE AGOSTO DE 2026</small><h3>El primer beso.</h3><p>Obviamente. El recuerdo que tiene su propia puerta en esta página.</p><button class="btn small" data-photo="16">abrir ese momento 🩷</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter more-memories">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 03 · COSAS QUE SE QUEDARON</p><h2>Y después vinieron<br>muchísimas más.</h2></div>
+        <div class="memory-grid">
+          <article class="mini-memory reveal"><span>🌙</span><h3>Las primeras charlas hasta tarde</h3><p>Esas conversaciones que supuestamente iban a ser cortitas y terminaban convirtiéndose en horas.</p></article>
+          <article class="mini-memory reveal"><span>🍕</span><h3>La pizza cuando me sentía mal</h3><p>Un gesto que decía “estoy aquí” sin necesitar demasiadas palabras.</p></article>
+          <article class="mini-memory reveal"><span>😤</span><h3>Cuando te enojabas porque “ponía excusas”</h3><p>Otro clásico de nuestra historia.</p></article>
+          <article class="mini-memory reveal"><span>📱</span><h3>La primera videollamada con Sofía</h3><p>Un momento que hoy parece pequeño, pero forma parte de cómo se fue mezclando nuestra vida.</p></article>
+          <article class="mini-memory reveal"><span>😴</span><h3>La primera videollamada durmiendo</h3><p>Porque me daba miedo y, de alguna manera, tenerte ahí hizo que todo se sintiera un poquito más tranquilo.</p></article>
+          <article class="mini-memory reveal"><span>🏠</span><h3>La primera vez que fui a tu casa</h3><p>Otro “primero” que se quedó guardado.</p></article>
+          <article class="mini-memory reveal"><span>👭</span><h3>Cuando conociste a Fernanda</h3><p>Otro pedacito de nuestras vidas encontrándose.</p></article>
+          <article class="mini-memory reveal"><span>😭</span><h3>El episodio Muxi</h3><p>Cuando sin querer acosaste a una famosa llamada Muxi. Sí, esto merece estar documentado.</p></article>
+          <article class="mini-memory reveal"><span>🍦</span><h3>Los heladitos de porongo a las 3 a. m.</h3><p>Yo todavía me río de que le preguntaras eso a un cantante. 😭</p></article>
+          <article class="mini-memory reveal"><span>📸</span><h3>Lo influencer que eres</h3><p>Y yo aquí siendo testigo de todo el universo que se arma alrededor de ti.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter photo-story" id="galeria">
+      <div class="section-inner wide">
+        <div class="reveal"><p class="kicker">CAPÍTULO 04 · FOTOS REALES</p><h2>Pedacitos de nosotras.</h2><p class="lead">Estas no son fotos de stock. Son momentos que ustedes mismas vivieron. Toca cualquiera para verla completa.</p></div>
+        <div class="gallery">
+          <figure class="gallery-card big reveal" data-photo="08"><img src="assets/photos/08-flores.jpeg" alt="Soley con flores amarillas" loading="lazy"><figcaption><b>21 de septiembre</b><span>Flores amarillas para mi amorch 🌻</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="09"><img src="assets/photos/09-luis-vega.jpeg" alt="Manuela y Soley en la serenata" loading="lazy"><figcaption><b>23 de septiembre</b><span>Luis Vega · serenata</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="10"><img src="assets/photos/10-fexpocruz.jpeg" alt="Soley en Fexpocruz" loading="lazy"><figcaption><b>27 de septiembre</b><span>Sector ganadero · Fexpocruz</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="11"><img src="assets/photos/11-pijamada.jpeg" alt="Soley dormida en una pijamada" loading="lazy"><figcaption><b>Una pijamada</b><span>Te quedaste dormida y yo tenía que guardar el momento.</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="12"><img src="assets/photos/12-miniso.jpeg" alt="Manuela y Soley en Miniso" loading="lazy"><figcaption><b>Miniso</b><span>Donde también pasaron pedacitos de nuestra historia.</span></figcaption></figure>
+          <figure class="gallery-card big reveal" data-photo="13"><img src="assets/photos/13-live.jpeg" alt="Manuela y Soley en un live" loading="lazy"><figcaption><b>El live</b><span>La gente se volvió loca y nosotras también. 😭</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="14"><img src="assets/photos/14-chimuelo.jpeg" alt="Anillos de Chimuelo" loading="lazy"><figcaption><b>Chimuelo 🐉</b><span>Un regalo para alguien que ama a Chimuelo.</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="15"><img src="assets/photos/15-empezando.jpeg" alt="Manuela y Soley al comienzo" loading="lazy"><figcaption><b>Cuando recién empezaba todo</b><span>Cuando todavía no sabíamos todo lo que vendría.</span></figcaption></figure>
+          <figure class="gallery-card hero-photo reveal" data-photo="16"><img src="assets/photos/16-primer-beso.jpeg" alt="Momento del primer beso" loading="lazy"><figcaption><b>28 · 08 · 2026</b><span>El momento exacto del primer beso. 🩷</span></figcaption></figure>
+          <figure class="gallery-card reveal" data-photo="07"><img src="assets/photos/07-tobby.jpeg" alt="Tobby" loading="lazy"><figcaption><b>Tobby 🐶</b><span>Nuestro hijo. El verdadero protagonista.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter map" id="mapa">
+      <div class="section-inner wide">
+        <div class="reveal"><p class="kicker">CAPÍTULO 05 · NUESTROS LUGARES</p><h2>Si el mapa pudiera<br>contar nuestra historia…</h2><p class="lead">Cada punto guarda una escena. Abre los que quieras y recuerda.</p></div>
+        <div class="map-board reveal">
+          <div class="route-line"></div>
+          <button class="map-pin p1" data-place="Century 21 Empire" data-date="28 de agosto de 2026" data-story="El primer beso." data-photo="16" data-map="https://maps.app.goo.gl/En4aBTHT3WocPJ5A6?g_st=ic">🩷<small>01</small></button>
+          <button class="map-pin p2" data-place="Tulum Discoteca" data-date="30 de agosto de 2026" data-story="Nuestra primera salida siendo algo." data-photo="15" data-map="https://maps.app.goo.gl/mvKz4UQ7kXGum31S9?g_st=ic">🩷<small>02</small></button>
+          <button class="map-pin p3" data-place="SONILUM ARENA" data-date="10 de septiembre de 2026" data-story="Nuestro primer concierto juntas." data-photo="09" data-map="https://maps.app.goo.gl/XUGpkQLuRvWFhoCX6?g_st=ic">🩷<small>03</small></button>
+          <button class="map-pin p4" data-place="Pijamada" data-date="25 de septiembre de 2026" data-story="Una de las pijamadas que tuvimos." data-photo="11" data-map="https://maps.app.goo.gl/NShRHLvhEV3md4GW7?g_st=ic">🩷<small>04</small></button>
+          <div class="map-center">S + M<br><small>y todos los lugares que todavía faltan</small></div>
+        </div>
+        <div class="map-info" id="mapInfo"><b>Elige un punto 🩷</b><p>La historia aparece aquí.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter tobby" id="tobby">
+      <div class="section-inner split reveal"><div><p class="kicker">CAPÍTULO ESPECIAL · NUESTRO HIJO</p><h2>TOBBY 🐶</h2><p class="lead">No podía hacer una historia de nosotras y dejar afuera al pequeño delincuente que decidió robar un calzón y quedarse con el puesto de hijo.</p><div class="tobby-stats"><span><b>Nombre</b>Tobby</span><span><b>Cargo</b>Hijo de las dos</span><span><b>Especialidad</b>Robar calzones</span><span><b>Nivel de ternura</b>Ilegal</span></div><button class="btn" data-photo="07">ver a nuestro hijo 🐾</button></div><img src="assets/photos/07-tobby.jpeg" alt="Tobby, el perro de Manuela y Soley" loading="lazy"></div>
+    </section>
+
+    <section class="chapter letters" id="cartas">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 06 · CARTAS PARA TI</p><h2>Hay cosas que quiero<br>decirte despacito.</h2><p class="lead">No abras todas de golpe. Cada una existe para un momento distinto.</p></div>
+        <div class="letter-grid">
+          <button class="letter-card reveal" data-letter="extrañes"><span>💌</span><b>Para cuando me extrañes</b><small>abre cuando necesites sentirme cerca</small></button>
+          <button class="letter-card reveal" data-letter="recuerdes"><span>🌷</span><b>Para que nunca olvides lo que eres para mí</b><small>para un día en que necesites recordarlo</small></button>
+          <button class="letter-card special reveal" data-letter="amor"><span>✨</span><b>Para cuando quieras saber qué significa nuestro amor</b><small>una carta sobre Dios, nosotras y el amor</small></button>
+          <button class="letter-card reveal" data-letter="mejorando"><span>🩷</span><b>Algo que nunca supe decirte</b><small>sobre mí, sobre cambiar y sobre no querer perderte</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter reasons" id="razones">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 07 · COSAS QUE AMO DE SOLEY</p><h2>Podría escribir muchísimo<br>y aun así faltaría.</h2><p class="lead">Tu carácter. Tu físico. Tus ojos. Tu determinación. Tu inteligencia. Tu sinceridad. Cómo no te dejas por nadie. Cómo ayudas. Cómo apoyas. Cómo me das mi lugar. Cómo te llevas con tu familia. Todo.</p></div>
+        <div class="love-traits"><span>tu carácter</span><span>tus ojos</span><span>tu determinación</span><span>tu inteligencia</span><span>tu sinceridad</span><span>tu forma de hablar</span><span>tu amabilidad</span><span>tu destreza</span><span>que no tienes límites</span><span>que rompes tus propios límites</span><span>cómo ayudas</span><span>cómo apoyas</span><span>cómo me das mi lugar</span><span>cómo quieres a tu familia</span><span>cómo te llevas con tu padre</span><span>tu forma de resolver</span><span>tu lado influencer</span><span>tu manera de ser tú</span></div>
+        <div class="trait-note reveal"><p>“Aunque a ti no te guste a veces tu carácter, yo lo amo.”</p><span>— Manuela</span></div>
+      </div>
+    </section>
+
+    <section class="chapter reasons100" id="razones100">
+      <div class="section-inner narrow center"><p class="kicker">CAPÍTULO 08 · 100 RAZONES</p><h2>Una por una.</h2><p class="lead">Toca el botón. No tienes que correr hasta la número 100.</p><div class="reason-card"><small id="reasonCounter">RAZÓN 01 DE 100</small><div id="reasonIcon">🩷</div><p id="reasonText">Porque eres tú, y eso ya significa muchísimo.</p></div><div class="progress"><span id="reasonBar"></span></div><button class="btn" id="reasonBtn">Dame otra razón 🩷</button><p class="muted">Cada 10 razones hay una pequeña sorpresa.</p></div>
+    </section>
+
+    <section class="chapter dictionary">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 09 · NUESTRO DICCIONARIO</p><h2>Palabras que solo<br>nosotras entendemos.</h2></div><div class="dictionary-grid">
+        <article><b>AMORCH</b><p>Nombre oficial de Soley cuando Manuela entra en modo cursi.</p></article>
+        <article><b>MI SOL</b><p>Porque hay personas que simplemente hacen más bonito el día.</p></article>
+        <article><b>PITILLERISMO</b><p>“Deja tu pitillerismo.” Una frase que ya merece monumento.</p></article>
+        <article><b>FIFI</b><p>“Es que sos muy fifi.” F-I-F-I. Literalmente.</p></article>
+        <article><b>YA ME ENOJÉ, AY</b><p>Drama express. Generalmente con posibilidades de reconciliación.</p></article>
+        <article><b>QUÉTE</b><p>Una palabra que, fuera de contexto, no explica absolutamente nada.</p></article>
+        <article><b>YO RESUELVO</b><p>La energía de Soley resumida en dos palabras.</p></article>
+        <article><b>PÁSAME TU QR</b><p>La respuesta de Manuela para muchas situaciones de la vida.</p></article>
+        <article><b>DARNOS BESOS Y DERRETIRNOS</b><p>Actividad oficial de la pareja.</p></article>
+        <article><b>INDIRECTAS</b><p>Se reciben. Se analizan. A veces… se captan tres semanas después. 😭</p></article>
+      </div></div>
+    </section>
+
+    <section class="chapter game" id="juegos">
+      <div class="section-inner narrow center"><p class="kicker">CAPÍTULO 10 · JUEGO DE NUESTRA HISTORIA</p><h2>¿Qué tanto recuerdas?</h2><p class="lead">No hay puntos que te quiten. Si fallas, simplemente inténtalo otra vez.</p><div id="quiz" class="quiz-box"></div></div>
+    </section>
+
+    <section class="chapter compatibility">
+      <div class="section-inner narrow center"><p class="kicker">CAPÍTULO 11 · COMPATIBILIDAD</p><h2>Soley × Manuela</h2><p class="lead">Una prueba completamente científica hecha con cero ciencia y muchísimo amor.</p><div id="compat" class="quiz-box"></div></div>
+    </section>
+
+    <section class="chapter mini-game">
+      <div class="section-inner narrow center"><p class="kicker">CAPÍTULO 12 · PEQUEÑO JUEGO</p><h2>Encuentra los 5 🩷</h2><p class="lead">Hay cinco corazones escondidos. Tócalos cuando los encuentres.</p><div class="heart-hunt" id="heartHunt"></div><p id="huntStatus">0 / 5 encontrados</p><div id="huntFinish" class="hidden-message">Encontraste todos. Sabía que podías. 🥹🩷</div></div>
+    </section>
+
+    <section class="chapter gifts">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 13 · CAJITA DE SORPRESAS</p><h2>No toques todo…<br>o sí. 😭</h2></div><div class="gift-grid">
+        <button data-gift="hug">🎁<b>Ábreme</b><small>abrazo</small></button><button data-gift="kiss">🎀<b>Ábreme</b><small>beso</small></button><button data-gift="miss">💌<b>Ábreme</b><small>te extraño</small></button><button data-gift="night">🌙<b>Ábreme</b><small>buenas noches</small></button><button data-gift="dont">🚫<b>NO TOCAR</b><small>en serio</small></button></div></div>
+    </section>
+
+    <section class="chapter song">
+      <div class="section-inner split reveal"><div><p class="kicker">CAPÍTULO 14 · NUESTRA CANCIÓN</p><h2>Préstame un beso.</h2><p class="lead">Jorge Cuéllar · Virlán García</p><p>La página empieza la canción desde el segundo <b>0:14</b>. Cuando termina, vuelve a ese punto. Así puede acompañarte durante toda la historia, aunque tardes diez minutos, veinte o una hora.</p><button class="btn" id="songPlay">▶ reproducir desde 0:14</button></div><div class="vinyl"><div class="vinyl-label">PRÉSTAME<br>UN BESO<br><small>∞</small></div></div></div>
+    </section>
+
+    <section class="chapter future" id="futuro">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 15 · TODAVÍA NOS FALTA MUCHO</p><h2>Lo que quiero vivir<br>contigo.</h2><p class="lead">No como una lista de cosas que tienen que pasar, sino como sueños que me encantaría compartir contigo.</p></div><div class="future-grid">
+        <article class="future-card reveal"><span>🎧</span><h3>Tomorrowland</h3><p>Quiero vivir esa locura contigo, bailar juntas y tener una historia que algún día recordemos diciendo “¿te acuerdas?”.</p></article>
+        <article class="future-card reveal"><span>🏡</span><h3>Un futuro juntas</h3><p>Construir una vida que se sienta nuestra. Con calma, trabajo, risas, discusiones que sabemos resolver y muchos besos.</p></article>
+        <article class="future-card reveal"><span>👶</span><h3>La broma de los gemelos</h3><p>Según nuestro universo, nos van a salir gemelos. Así que, aparentemente, me toca trabajar el triple. 😭</p></article>
+        <article class="future-card reveal"><span>🐄</span><h3>Mi sueño</h3><p>Quiero llegar a ser una gran ganadera agropecuaria y que tú puedas verme cumplirlo.</p></article>
+        <article class="future-card reveal"><span>📈</span><h3>Tus metas</h3><p>Quiero verte crecer en redes, cumplir tus metas y conseguir trabajos que te gusten, donde te valoren y no te exploten.</p></article>
+        <article class="future-card reveal"><span>🌅</span><h3>Maldivas</h3><p>Ese viaje de ensueño. Dos personas, agua, atardeceres y probablemente alguna pelea por quién se quedó con la mejor almohada.</p></article>
+      </div></div>
+    </section>
+
+    <section class="chapter letter-honest">
+      <div class="section-inner narrow reveal"><p class="kicker">CAPÍTULO 16 · ALGO QUE NUNCA SUPE DECIRTE</p><h2>Estoy mejorando.</h2><div class="long-letter"><p>Soley, hay algo que quizá no te he sabido decir de la manera correcta.</p><p>Estoy mejorando. Puede que no siempre lo notes, puede que no siempre sepa explicarte el proceso y puede que a veces parezca que voy más lento de lo que quisiera. Pero estoy intentando.</p><p>No quiero perderte. Y no quiero que esa frase sea solamente algo bonito que se escribe en una página. Quiero que se vea en cómo te trato, en cómo escucho, en cómo aprendo, en cómo intento hacerlo mejor.</p><p>Te amo, y precisamente porque te amo no quiero quedarme exactamente en el mismo lugar. Quiero crecer. Quiero aprender. Quiero ser una mejor versión de mí y construir contigo desde un lugar más bonito.</p><p>No te prometo perfección. Te prometo intención, esfuerzo y seguir aprendiendo.</p><p>Y aunque quizás todavía no te hayas dado cuenta de todo lo que estoy intentando cambiar, quería que algún día pudieras leer esto y saberlo.</p><p class="signature">Te amo.<br>— Manuela 🩷</p></div></div>
+    </section>
+
+    <section class="chapter star-section">
+      <div class="section-inner center reveal"><p class="kicker">CAPÍTULO 17 · UNA ESTRELLA PARA TI</p><h2>Si pudiera darte una estrella…</h2><p class="lead">le pondría tu nombre. Pero como no puedo, te dejo esta.</p><div class="big-star">✦</div><p>Y si alguna noche estás viendo esta página, recuerda:</p><p class="night-line">“En algún lugar estoy pensando en ti.” 🩷</p></div>
+    </section>
+
+    <section class="chapter flower-section">
+      <div class="section-inner narrow center"><p class="kicker">CAPÍTULO 18 · LA FLOR</p><h2>Hazla crecer.</h2><p class="lead">Cada cosa que descubriste en la página alimenta esta pequeña flor.</p><div class="flower" id="flower"><div class="stem"></div><div class="leaf l1"></div><div class="leaf l2"></div><div class="rose">🌷</div></div><p id="flowerText">Todavía está creciendo…</p></div>
+    </section>
+
+    <section class="chapter secret" id="secreto">
+      <div class="section-inner narrow center reveal"><p class="kicker">CAPÍTULO 19 · ULTRA SECRETO</p><h2>Hay una palabra que abre algo.</h2><p class="lead">Pista: es pequeña, pero contiene todo.</p><input id="secretInput" maxlength="12" autocomplete="off" placeholder="escribe la palabra…"><button class="btn" id="secretBtn">desbloquear 🔐</button><p id="secretFeedback"></p><div id="secretLetter" class="secret-letter hidden-message"><div class="secret-stars">✦ ✧ ✦</div><h3>AMOR</h3><p>Sabía que la ibas a encontrar.</p><p>Entre todas las palabras del mundo, esta siempre va a ser nuestra.</p><p>Y si alguna vez dudas de lo que significa para mí, vuelve a esta página.</p><p class="signature">— Manuela 🩷</p></div></div>
+    </section>
+
+    <section class="chapter achievements">
+      <div class="section-inner wide"><div class="reveal"><p class="kicker">CAPÍTULO 20 · LOGROS</p><h2>Desbloqueaste partes<br>de nuestra historia.</h2></div><div class="badges" id="badges"></div></div>
+    </section>
+
+    <section class="chapter future-list">
+      <div class="section-inner narrow center reveal"><p class="kicker">CAPÍTULO 21 · MÁS COSAS QUE QUIERO VIVIR</p><h2>La lista no termina aquí.</h2><div class="wish-list"><p>☐ Más conciertos juntas</p><p>☐ Más pijamadas</p><p>☐ Más fotos feas que nos hagan reír</p><p>☐ Más viajes</p><p>☐ Más cenas improvisadas</p><p>☐ Más amanecidas hablando</p><p>☐ Más días tranquilos</p><p>☐ Más “pásame tu QR”</p><p>☐ Más “deja tu pitillerismo”</p><p>☐ Muchísimos más capítulos</p></div></div>
+    </section>
+
+    <section class="chapter extras" id="extras">
+      <div class="section-inner wide">
+        <div class="reveal"><p class="kicker">CAPÍTULO 22 · COSAS QUE TODAVÍA FALTABAN</p><h2>Porque una historia así<br>nunca cabe en una sola sección.</h2><p class="lead">Aquí guardé algunas de las ideas que también quería que existieran: una conversación de mentira, un antes y después, un pequeño calendario, una carta desde el futuro y una pregunta completamente innecesaria pero importantísima.</p></div>
+        <div class="extras-grid">
+          <article class="extra-card reveal fake-chat-card">
+            <span class="extra-icon">💬</span><small>CHAT OFICIALMENTE NO OFICIAL</small><h3>Una conversación cualquiera</h3>
+            <div class="fake-chat"><div class="bubble bubble-s">Soley: ¿Quéte?</div><div class="bubble bubble-m">Manuela: Yo resuelvo.</div><div class="bubble bubble-s">Soley: Deja tu pitillerismo 😭</div><div class="bubble bubble-m">Manuela: Pásame tu QR.</div><div class="bubble bubble-s">Soley: Ya me enojé, ay.</div><div class="bubble bubble-m">Manuela: ven, te doy un beso.</div></div>
+            <p class="chat-last">Última conexión: para siempre. 🩷</p>
+          </article>
+          <article class="extra-card reveal">
+            <span class="extra-icon">🪞</span><small>ANTES / DESPUÉS</small><h3>Antes de ti · después de ti</h3>
+            <div class="before-after"><div><b>ANTES</b><p>Un montón de días normales.</p><span>sin este capítulo</span></div><div class="ba-arrow">→</div><div><b>DESPUÉS</b><p>Los mismos días, pero con una historia que contar.</p><span>con nosotras</span></div></div>
+          </article>
+          <article class="extra-card reveal">
+            <span class="extra-icon">📅</span><small>CALENDARIO DE RECUERDOS</small><h3>Fechas que ya tienen significado</h3>
+            <div class="memory-calendar"><button data-cal="28">28 AGO<span>primer beso</span></button><button data-cal="30">30 AGO<span>primera salida siendo algo</span></button><button data-cal="10">10 SEP<span>primer concierto juntas</span></button><button data-cal="21">21 SEP<span>flores amarillas</span></button><button data-cal="23">23 SEP<span>serenata de Luis Vega</span></button><button data-cal="25">25 SEP<span>una pijamada</span></button><button data-cal="27">27 SEP<span>sector ganadero · Fexpocruz</span></button></div><p id="calendarMessage" class="calendar-message">Toca una fecha. 🩷</p>
+          </article>
+          <article class="extra-card reveal character-card">
+            <span class="extra-icon">🎭</span><small>TEST COMPLETAMENTE SERIO</small><h3>¿Qué personaje eres en nuestra historia?</h3>
+            <p>Presiona el botón y deja que el universo decida.</p><button class="btn small" id="characterBtn">descubrir mi personaje ✨</button><div id="characterResult" class="character-result"></div>
+          </article>
+          <article class="extra-card reveal">
+            <span class="extra-icon">✉️</span><small>DESDE EL FUTURO</small><h3>Una carta que todavía no existe</h3>
+            <p>Imagina que pasó muchísimo tiempo y seguimos teniendo historias nuevas.</p><button class="btn small" id="futureLetterBtn">abrir carta del futuro 💌</button>
+          </article>
+          <article class="extra-card reveal">
+            <span class="extra-icon">🔎</span><small>ÚLTIMA PISTA</small><h3>Hay cosas que solo aparecen si exploras</h3>
+            <p>Haz clic en las fotos, abre cartas, encuentra corazones, toca los regalos y vuelve a mirar alrededor. Algunas partes de esta página están hechas para encontrarse, no para anunciarse.</p><button class="btn small" id="exploreToast">seguir buscando 🩷</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter final" id="final">
+      <div class="final-glow"></div><div class="section-inner narrow center reveal"><p class="kicker">ÚLTIMO CAPÍTULO · POR AHORA</p><div class="final-heart">🩷</div><h2>Soley Beltran</h2><p class="date">28 de agosto de 2026</p><p class="final-title">El día que empezó nuestra historia.</p><div class="final-copy"><p>Gracias por ser mi amor.</p><p>Gracias por ser mi sol.</p><p>Gracias por ser mi persona favorita.</p><p>Gracias por cada recuerdo que ya tenemos y por todos los que todavía no sabemos que vamos a crear.</p></div><p class="big-final">Te amo.</p><p>Y si tuviera que volver a elegirte,<br>te elegiría todas las veces.</p><p class="signature">— Manuela 🩷</p><button class="btn btn-main" id="restartBtn">¿Empezamos otro capítulo? ↻</button><div class="completion"><div class="completion-meter"><span id="completionMeter"></span></div><span id="completionText">Nuestra historia está esperando ser descubierta.</span></div></div></section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-box"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
